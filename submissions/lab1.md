@@ -206,7 +206,7 @@ app-redis-1      3.87%     4.605MiB / 15.58GiB   72.1kB / 27.3kB   6
 ```
 
 * **Which service uses the most memory? Does it change under load?**
-  * **Memory Leader:** Based on the collected metrics, **`app-events-1`** consistently consumes the most RAM (~**`41 MiB`**), closely followed by **`app-gateway-1`** (~**`38 MiB`**). Surprisingly, `app-postgres-1` ranks third, holding steady at around ~27 MiB.
+  * **Memory Leader:** Based on the collected metrics, **`app-events-1`** consistently consumes the most RAM (\~**`41 MiB`**), closely followed by **`app-gateway-1`** (\~**`38 MiB`**). Surprisingly, `app-postgres-1` ranks third, holding steady at around ~27 MiB.
   * **Change Under Load:** Memory consumption **remains completely static** across all three scenarios. For instance, `app-events-1` goes from `40.93 MiB` (idle) to `41.1 MiB` (load) and `41.35 MiB` (chaos). This negligible variance of just a few hundred kilobytes proves that the microservices are properly designed as `stateless` and do not suffer from memory leaks.
 
 * **Which service uses the most CPU under load? Why?**
