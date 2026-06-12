@@ -16,7 +16,7 @@ spec:
         - name: ghcr-secret
       containers:
       - name: events
-        image: ghcr.io/kage-ops-dev/quickticket-events:dfe86fb20a532ded6cac4b168a2f0089a809d57b
+        image: ghcr.io/kage-ops-dev/quickticket-events:9aabaf188cfc01efb314e2f09ddf1aaa912f445a
         imagePullPolicy: Always
         ports:
         - containerPort: 8081
