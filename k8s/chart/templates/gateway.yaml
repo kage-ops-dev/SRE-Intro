@@ -18,7 +18,7 @@ spec:
         - name: ghcr-secret
       containers:
       - name: gateway
-        image: ghcr.io/kage-ops-dev/quickticket-gateway:does-not-exist
+        image: ghcr.io/kage-ops-dev/quickticket-gateway:dfe86fb20a532ded6cac4b168a2f0089a809d57b
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
