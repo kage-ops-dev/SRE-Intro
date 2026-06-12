@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gateway
+  labels:
+    version: "v2"
 spec:
   replicas: {{ .Values.gateway.replicas }}
   selector:
@@ -10,7 +12,6 @@ spec:
   template:
     metadata:
       labels:
-        version: "v2"
         app: gateway
     spec:
       imagePullSecrets:
